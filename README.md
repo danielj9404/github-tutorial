@@ -39,3 +39,7 @@ In order to set up a repository follow these steps.
 2. `Git add` is used when you want to add to your github remote repository like more detail in your files or change the code in your files. 
 3. `git commit -m "README"` is used when it takes a snapshot of your code and saves it to github.
 4. `git push` is used when you made changes of your code in nitrous or c9.io and put them up in the "sky" which means that the work was saved into github and then you can see what changes you have done. 
+
+---
+## Error Handling
+ If for some reason you did git init in the wrong repository then you have to delete git from **your** repository of nitrous. In order to delete git from your repository you have to type `rm -rf .git` and it erases everything in the git folder.
