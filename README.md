@@ -9,7 +9,7 @@ Github can see the changes you make, stores code in the cloud and you can collab
 
 ---
 ##Initial Setup
-1. To make a github account you have to make a username that you can remember and a password.
+1. To make a github account you have to go to [visit github] (http://www.github.com) have to make a username that you can remember and a password.
 2. Then in order to link you github to nitrous, on the top right click on your profile icon and click on settings.
 3. When you click setting, in the left side click on the _SSH keys_ and put add _SSH keys_.
 4. When you pick a title put Nitrous.io then go to your nitrous account and in the _top right_ click your username and go to dashboard.
@@ -24,7 +24,7 @@ Github can see the changes you make, stores code in the cloud and you can collab
 ## Repository Setup
 Initialize 
 In order to set up a repository follow these steps.  
-1. Then put `git init` it initializes the directory and is only done once.  
+1. Then put `git init` it initializes the directory and is only done once and also initializes and empty git repository into git repository. 
 2. Make a repository by typing `mkdir` which make a new repository, then type the name that you want to give that file so you can remember which file is which when trying to find a subject for a specific work.     
 3. Then you type `cd (name of the file)`,`cd` makes you go inside the repository, type `pwd`, it helps you see in which file you are currently working on.    
 4. After you finish your work or want to save it to github to save your work you put `git add README` which means you are adding changes to the repository.  
@@ -35,7 +35,7 @@ In order to set up a repository follow these steps.
 
 ---
 ## Workflow & Commands
-1. `Git status` is used when 
+1. `Git status` is to see which files you have commited (made changes to) and it's useful to see what progress you made so far in your work.  
 2. `Git add` is used when you want to add to your github remote repository like more detail in your files or change the code in your files. 
-3. `git commit -m "README"` is used when you
+3. `git commit -m "README"` is used when it takes a snapshot of your code and saves it to github.
 4. `git push` is used when you made changes of your code in nitrous or c9.io and put them up in the "sky" which means that the work was saved into github and then you can see what changes you have done. 
