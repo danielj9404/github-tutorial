@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GitHub-tutorial by danielj9404</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/danielj9404/github-tutorial">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/danielj9404/github-tutorial/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/danielj9404/github-tutorial/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>GitHub-tutorial</h1>
+          <p>Getting Started With Github</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/danielj9404">danielj9404</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p>by  <em>Daniel Jeronimo</em> </p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<p>Git is a version control which keeps <em>snapshots</em> of the code and does not require github.<br>
+Github can see the changes you make, stores code in the cloud and you can collaborate with anyone on files. </p>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<ol>
+<li>To make a github account you have to go to <a href="http://www.github.com">visit github</a> have to make a username that you can remember and a password.</li>
+<li>Then in order to link you github to nitrous, on the top right click on your profile icon and click on settings.</li>
+<li>When you click setting, in the left side click on the <em>SSH keys</em> and put add <em>SSH keys</em>.</li>
+<li>When you pick a title put Nitrous.io then go to your nitrous account and in the <em>top right</em> click your username and go to dashboard.</li>
+<li>If your in dashboard click on <em>SSH keys tab</em> and <strong>copy/paste</strong> your Nitrous.io <em>SSH key</em> into github which should start with <strong>ssh-rsa</strong> and press add key.</li>
+<li>Go to nitrous and click on the container tab, open <strong>IDE</strong> and type yes to confirm.</li>
+<li>
+<code>git config</code> is used after you initialzed your directory and when you made your github account.</li>
+<li>
+<code>git config</code> is for github to memorize who you are so in order to do that you have to type <strong>git config -- global user.name "First Last"</strong> name.</li>
+<li>Also you do it for your email so you type <strong>git config --global user.email "<a href="mailto:username@hstat.org">username@hstat.org</a>"</strong> both <code>git configs</code> help github memorize who it is and who you are so that way when you save your work in github it knows right away who it is.</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<p>Initialize 
+In order to set up a repository follow these steps.<br>
+1. Then put <code>git init</code> it initializes the directory and is only done once and also initializes and empty git repository into git repository. 
+2. Make a repository by typing <code>mkdir</code> which make a new repository, then type the name that you want to give that file so you can remember which file is which when trying to find a subject for a specific work.<br>
+3. Then you type <code>cd (name of the file)</code>,<code>cd</code> makes you go inside the repository, type <code>pwd</code>, it helps you see in which file you are currently working on.<br>
+4. After you finish your work or want to save it to github to save your work you put <code>git add README</code> which means you are adding changes to the repository.<br>
+5. Then put <code>git commit -m "file name"</code> which saves the snapshots of your code to your remote of github.  </p>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<ol>
+<li>
+<code>Git status</code> is to see which files you have commited (made changes to) and it's useful to see what progress you made so far in your work.<br>
+</li>
+<li>
+<code>Git add</code> is used when you want to add to your github remote repository like more detail in your files or change the code in your files. </li>
+<li>
+<code>git commit -m "README"</code> is used when it takes a snapshot of your code and saves it to github.</li>
+<li>
+<code>git push</code> is used when you made changes of your code in nitrous or c9.io and put them up in the "sky" which means that the work was saved into github and then you can see what changes you have done. </li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="error-handling" class="anchor" href="#error-handling" aria-hidden="true"><span class="octicon octicon-link"></span></a>Error Handling</h2>
+
+<p>If for some reason you did git init in the wrong repository then you have to delete git from <strong>your</strong> repository of nitrous. In order to delete git from your repository you have to type <code>rm -rf .git</code> and it erases everything in the git folder.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
